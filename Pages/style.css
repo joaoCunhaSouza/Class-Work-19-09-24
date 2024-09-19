@@ -1,19 +1,24 @@
-.header{
+.header {
     background-color: red;
 }
 
-.main{
+.main {
     background-color: green;
+    min-height: calc(100vh - 100px); /* Ajuste conforme a altura do header e footer */
 }
 
-.footer{
-    background-color: blue;
+footer {
+    background-color: red;
+    padding: 20px; /* Adiciona algum espaço ao redor do texto */
 }
 
-.container{
+.container {
     display: flex;
+    flex-direction: column; /* Para empilhar os elementos verticalmente */
+    align-items: center; /* Centraliza os itens horizontalmente */
+    justify-content: center; /* Centraliza os itens verticalmente */
 }
 
-p{
+p {
     background-color: #ccc;
 }
