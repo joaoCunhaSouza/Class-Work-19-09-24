@@ -1,0 +1,19 @@
+.header{
+    background-color: red;
+}
+
+.main{
+    background-color: green;
+}
+
+.footer{
+    background-color: blue;
+}
+
+.container{
+    display: flex;
+}
+
+p{
+    background-color: #ccc;
+}
