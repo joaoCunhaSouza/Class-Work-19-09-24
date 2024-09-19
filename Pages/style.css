@@ -1,24 +1,99 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
 .header {
-    background-color: red;
+    background-color: #0056b3; /* Verde de campo */
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 60px; 
+    height: auto;
+    margin-right: 10px; 
+}
+
+.navigation ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.navigation ul li {
+    margin: 0 15px;
+}
+
+.navigation ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
 }
 
 .main {
-    background-color: green;
-    min-height: calc(100vh - 100px); /* Ajuste conforme a altura do header e footer */
-}
-
-footer {
-    background-color: red;
-    padding: 20px; /* Adiciona algum espaço ao redor do texto */
+    background-color: #e8f5e9;
+    min-height: calc(100vh - 150px); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
 }
 
 .container {
-    display: flex;
-    flex-direction: column; /* Para empilhar os elementos verticalmente */
-    align-items: center; /* Centraliza os itens horizontalmente */
-    justify-content: center; /* Centraliza os itens verticalmente */
+    text-align: center;
 }
 
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 2rem;
+    margin: 20px 0;
+}
+
+.betting-image, .promotion-image {
+    max-width: 100%;
+    height: auto;
+    margin: 15px 0;
+}
+
+footer {
+    background-color: #0056b3; /* Verde de campo */
+    color: white;
+    padding: 20px;
+    text-align: left;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between; /* Espaço entre as seções */
+    margin-bottom: 10px;
+}
+
+.discipline-info {
+    max-width: 50%; /* Limita a largura da seção da disciplina */
+}
+
+.students-info {
+    max-width: 45%; /* Limita a largura da seção dos alunos */
+    display: flex;
+
+}
+
+h3 {
+    margin-bottom: 10px;
+}
 p {
-    background-color: #ccc;
+    margin: 5px 0;
 }
