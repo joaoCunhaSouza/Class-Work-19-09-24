@@ -1,29 +1,126 @@
-body {
+.header {
+    background-color: #0056b3; /* Verde de campo */
+    color: white;
     display: flex;
-    margin: 0;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 60px; 
+    height: auto;
+    margin-right: 10px; 
+}
+
+.navigation ul {
+    list-style-type: none;
+    display: flex;
+    padding: 0; /* Remove o padding padrão da lista */
+    margin: 0; /* Remove a margem padrão da lista */
+}
+
+.navigation ul li {
+    margin: 0 15px;
+}
+
+.navigation ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.main {
+    background-color: #e8f5e9;
+    min-height: calc(100vh - 150px); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     padding: 20px;
 }
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin: 0; /* Adiciona margem zero */
+}
+
+h2 {
+    font-size: 2rem;
+    margin: 20px 0;
+}
+
+.betting-image, .promotion-image {
+    max-width: 100%;
+    height: auto;
+    margin: 15px 0;
+}
+
+footer {
+    background-color: #0056b3; /* Verde de campo */
+    color: white;
+    padding: 20px;
+    text-align: left;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between; /* Espaço entre as seções */
+    margin-bottom: 10px;
+}
+
+.discipline-info {
+    max-width: 50%; /* Limita a largura da seção da disciplina */
+}
+
+.students-info {
+    max-width: 45%; /* Limita a largura da seção dos alunos */
+    display: flex;
+}
+
+h3 {
+    margin: 10px 0; /* Margem consistente */
+}
+
+p {
+    margin: 5px 0;
+}
+
 .left {
     flex: 1;
     max-width: 50%; /* Limita a largura máxima da imagem */
 }
+
 .right {
     flex: 1;
     max-width: 50%; /* Limita a largura máxima do conteúdo à direita */
     padding-left: 20px;
 }
+
 img {
     width: 100%; /* A imagem ocupa 100% da largura do contêiner */
     height: auto; /* Mantém a proporção da imagem */
 }
+
 table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
 }
+
 table, th, td {
     border: 1px solid black;
 }
+
 th, td {
     padding: 10px;
     text-align: left;
